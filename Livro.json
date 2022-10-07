@@ -1,0 +1,19 @@
+[ {
+  "codigo" : 1,
+  "titulo" : "Prog 3",
+  "proximoNumero" : 2,
+  "autor" : {
+    "nome" : "Guilherme",
+    "sobrenome" : "Maia",
+    "nacionalidade" : "Brasileiro"
+  }
+}, {
+  "codigo" : 1,
+  "titulo" : "Prog 2",
+  "proximoNumero" : 2,
+  "autor" : {
+    "nome" : "Guilherme",
+    "sobrenome" : "Maia",
+    "nacionalidade" : "Brasileiro"
+  }
+} ]
