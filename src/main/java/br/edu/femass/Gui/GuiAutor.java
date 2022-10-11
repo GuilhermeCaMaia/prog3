@@ -6,6 +6,7 @@ import br.edu.femass.model.Autor;
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -44,6 +45,13 @@ public class GuiAutor {
                 textNacionalidade.setText(autor.getNacionalidade());
             }
         });
+        BtnPoximo.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                GuiLivro guiLivro = new GuiLivro();
+                guiLivro.abrirTela();
+            }
+        });
     }
     public JPanel getJPanelCadastrarAutor(){return JPanelCadastrarAutor;}
 
@@ -60,11 +68,14 @@ public class GuiAutor {
         JFrame frame = new JFrame();
         GuiAutor guiAutor = new GuiAutor();
         guiAutor.preencherLista();
-        frame.setContentPane(guiAutor.JPanelCadastrarAutor);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setTitle("Cadastrar autor");
-        frame.pack();
-        frame.setVisible(true);
+        JDialog jFrame = new JDialog(new Frame(),true);
+        jFrame.setContentPane(guiAutor.JPanelCadastrarAutor);
+
+        //frame.setContentPane(guiAutor.JPanelCadastrarAutor);
+        jFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        //frame.setTitle("Cadastrar autor");
+        jFrame.pack();
+        jFrame.setVisible(true);
     }
 
 }

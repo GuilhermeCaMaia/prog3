@@ -6,9 +6,9 @@ import br.edu.femass.Gui.GuiMenu;
 
 public class App {
     public static void main(String[] args) {
-        //new GuiMenu().abrirTelaI();
+        new GuiMenu().abrirTelaI();
         //GuiAutor guiAutor = new GuiAutor();
         //guiAutor.abrirTela();
-        new GuiLivro().abrirTela2();
+        //new GuiLivro().abrirTela2();
     }
 }

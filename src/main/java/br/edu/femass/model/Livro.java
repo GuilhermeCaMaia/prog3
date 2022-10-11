@@ -1,5 +1,6 @@
 package br.edu.femass.model;
 
+import java.util.List;
 import java.util.Objects;
 
 public class Livro {
@@ -48,4 +49,12 @@ public class Livro {
     public int hashCode() {
         return Objects.hash(codigo, titulo, proximoNumero, autor);
     }//
+
+    public static void atualizarProximoNumero(List<Livro> livros){
+        for (Livro livro: livros){
+            if(livro.getCodigo()> livro.proximoNumero){
+                livro.proximoNumero = livro.getCodigo()+1;
+            }
+        }
+    }
 }

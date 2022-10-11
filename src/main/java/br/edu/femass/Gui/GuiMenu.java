@@ -16,12 +16,7 @@ public class GuiMenu {
             @Override
             public void actionPerformed(ActionEvent e) {
                 GuiAutor guiAutor = new GuiAutor();
-                JDialog jFrame = new JDialog(new Frame(), true);
-                jFrame.setContentPane(guiAutor.getJPanelCadastrarAutor());
-
-                jFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-                jFrame.pack();
-                jFrame.setVisible(true);
+                guiAutor.abrirTela();
             }
         });
     }

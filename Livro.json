@@ -16,4 +16,23 @@
     "sobrenome" : "Maia",
     "nacionalidade" : "Brasileiro"
   }
+}, {
+  "codigo" : 1,
+  "titulo" : "Prog 1",
+  "proximoNumero" : 2,
+  "autor" : {
+    "nome" : "Gui",
+    "sobrenome" : "m",
+    "nacionalidade" : "br"
+  }
+}, {
+  "codigo" : 1,
+  "titulo" : "",
+  "proximoNumero" : 2,
+  "autor" : null
+}, {
+  "codigo" : 1,
+  "titulo" : "Prog 3",
+  "proximoNumero" : 2,
+  "autor" : null
 } ]

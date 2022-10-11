@@ -31,6 +31,7 @@ public class DaoLivro extends Persistencia<Livro> implements Dao<Livro>{
             String json = new String(in.readAllBytes());
             List<Livro> livros = getOjectmapper().readValue(json,
                     new TypeReference<List<Livro>>() {});
+            Livro.atualizarProximoNumero(livros);
             return livros;
         }catch (FileNotFoundException f){
             return new ArrayList<>();

@@ -8,6 +8,7 @@ import br.edu.femass.model.Livro;
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
@@ -47,6 +48,11 @@ public class GuiLivro {
             }
         });
     }
+
+    public JPanel getJPanelLivro() {
+        return JPanelLivro;
+    }
+
     private void preencherListaAutro(){
         try {
             List<Autor> autors = new DaoAutor().getAll();
@@ -70,15 +76,14 @@ public class GuiLivro {
         }
     }
 
-    public void abrirTela2(){
-        JFrame frame = new JFrame();
+    public void abrirTela(){
         GuiLivro guiLivro = new GuiLivro();
         guiLivro.preencherLista();
         guiLivro.preencherListaAutro();
-        frame.setContentPane(guiLivro.JPanelLivro);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setTitle("Cadastrar Livro");
-        frame.pack();
-        frame.setVisible(true);
+        JDialog jFrame = new JDialog(new Frame(), true);
+        jFrame.setContentPane(guiLivro.getJPanelLivro());
+        jFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        jFrame.pack();
+        jFrame.setVisible(true);
     }
 }
