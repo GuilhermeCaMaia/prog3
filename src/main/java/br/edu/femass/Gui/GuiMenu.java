@@ -19,6 +19,13 @@ public class GuiMenu {
                 guiAutor.abrirTela();
             }
         });
+        BtnAlugarLivro.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                GuiCadastro guiCadastro = new GuiCadastro();
+                guiCadastro.abrirTela();
+            }
+        });
     }
     public void abrirTelaI(){
         JFrame frame = new JFrame();

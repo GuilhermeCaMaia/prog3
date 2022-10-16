@@ -1,38 +1,37 @@
 [ {
   "codigo" : 1,
-  "titulo" : "Prog 3",
-  "proximoNumero" : 2,
+  "titulo" : "teste",
+  "proximoNumero" : 1,
   "autor" : {
     "nome" : "Guilherme",
     "sobrenome" : "Maia",
     "nacionalidade" : "Brasileiro"
   }
 }, {
-  "codigo" : 1,
-  "titulo" : "Prog 2",
-  "proximoNumero" : 2,
-  "autor" : {
-    "nome" : "Guilherme",
-    "sobrenome" : "Maia",
-    "nacionalidade" : "Brasileiro"
-  }
-}, {
-  "codigo" : 1,
-  "titulo" : "Prog 1",
-  "proximoNumero" : 2,
+  "codigo" : 2,
+  "titulo" : "livro",
+  "proximoNumero" : 1,
   "autor" : {
     "nome" : "Gui",
-    "sobrenome" : "m",
-    "nacionalidade" : "br"
+    "sobrenome" : "Maia",
+    "nacionalidade" : "Brasileiro"
   }
 }, {
-  "codigo" : 1,
-  "titulo" : "",
-  "proximoNumero" : 2,
-  "autor" : null
+  "codigo" : 3,
+  "titulo" : "teste2",
+  "proximoNumero" : 1,
+  "autor" : {
+    "nome" : "Guilherme",
+    "sobrenome" : "Maia",
+    "nacionalidade" : "Brasileiro"
+  }
 }, {
-  "codigo" : 1,
-  "titulo" : "Prog 3",
-  "proximoNumero" : 2,
-  "autor" : null
+  "codigo" : 4,
+  "titulo" : "teste3",
+  "proximoNumero" : 1,
+  "autor" : {
+    "nome" : "Guilherme",
+    "sobrenome" : "Maia",
+    "nacionalidade" : "Brasileiro"
+  }
 } ]

@@ -25,10 +25,15 @@ public class GuiLivro {
         salvarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Livro livro = new Livro(
-                        textTitulo.getText(),
-                        (Autor) CBAutor.getSelectedItem()
-                );
+                Livro livro = new Livro();
+                try {
+                    livro = new Livro(
+                                textTitulo.getText(),
+                                (Autor) CBAutor.getSelectedItem());
+                } catch (Exception ex) {
+                    throw new RuntimeException(ex);
+                }
+                preencherLista();
                 try {
                     new DaoLivro().save(livro);
                     preencherLista();
@@ -40,11 +45,13 @@ public class GuiLivro {
         listLivros.addListSelectionListener(new ListSelectionListener() {
             @Override
             public void valueChanged(ListSelectionEvent e) {
-                Livro livro = (Livro) listLivros.getSelectedValue();
-                if(livro==null) return;
-                textCodigos.setText(livro.getCodigo().toString());
-                textTitulo.setText(livro.getTitulo());
-                CBAutor.setSelectedItem(livro.getAutor());
+                Autor autor = (Autor) CBAutor.getSelectedItem();
+                try {
+                    List<Livro> livros = new DaoLivro().getAll(autor);
+                    listLivros.setListData(livros.toArray());
+                } catch (Exception ex) {
+                    JOptionPane.showMessageDialog(null,ex.getMessage());
+                }
             }
         });
     }
@@ -68,18 +75,22 @@ public class GuiLivro {
     }
 
     private void preencherLista(){
-        try {
-            listLivros.setListData(
-                    new DaoLivro().getAll().toArray());
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null,e.getMessage());
+        DaoLivro daoLivro = new DaoLivro();
+        Autor autor = new Autor();
+        if(CBAutor.equals(autor)){
+            try {
+                listLivros.setListData(
+                        new DaoLivro().getAll().toArray());
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(null,e.getMessage());
+            }
         }
     }
 
     public void abrirTela(){
         GuiLivro guiLivro = new GuiLivro();
-        guiLivro.preencherLista();
         guiLivro.preencherListaAutro();
+        guiLivro.preencherLista();
         JDialog jFrame = new JDialog(new Frame(), true);
         jFrame.setContentPane(guiLivro.getJPanelLivro());
         jFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -87,3 +98,8 @@ public class GuiLivro {
         jFrame.setVisible(true);
     }
 }
+//    Livro livro = (Livro) listLivros.getSelectedValue();
+//                if(livro==null) return;
+//                        textCodigos.setText(livro.getCodigo().toString());
+//                        textTitulo.setText(livro.getTitulo());
+//                        CBAutor.setSelectedItem(livro.getAutor());

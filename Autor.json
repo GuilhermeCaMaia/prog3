@@ -1,21 +1,9 @@
 [ {
-  "nome" : "Gui",
-  "sobrenome" : "m",
-  "nacionalidade" : "br"
-}, {
   "nome" : "Guilherme",
   "sobrenome" : "Maia",
   "nacionalidade" : "Brasileiro"
 }, {
-  "nome" : "",
-  "sobrenome" : "",
-  "nacionalidade" : ""
-}, {
-  "nome" : "",
-  "sobrenome" : "",
-  "nacionalidade" : ""
-}, {
-  "nome" : "",
-  "sobrenome" : "",
-  "nacionalidade" : ""
+  "nome" : "Gui",
+  "sobrenome" : "Maia",
+  "nacionalidade" : "Brasileiro"
 } ]

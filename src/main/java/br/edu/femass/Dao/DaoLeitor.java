@@ -1,6 +1,6 @@
 package br.edu.femass.Dao;
 
-import br.edu.femass.model.Exemplar;
+import br.edu.femass.model.Leitor;
 import com.fasterxml.jackson.core.type.TypeReference;
 
 import java.io.FileInputStream;
@@ -9,28 +9,28 @@ import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DaoExemplar extends Persistencia<Exemplar> implements Dao<Exemplar>{
-    private final static String NOMEARQUIVO = "Exemplar.json";
+public class DaoLeitor extends Persistencia<Leitor> implements Dao<Leitor>{
+    private final static String NOMEARQUIVO = "Leitor.json";
 
     @Override
-    public void save(Exemplar exemplar) throws Exception {
-        List<Exemplar> exemplars = getAll();
-        exemplars.add(exemplar);
+    public void save(Leitor leitor) throws Exception {
+        List<Leitor> leitors = getAll();
+        leitors.add(leitor);
         String json = getOjectmapper().writerWithDefaultPrettyPrinter()
-                .writeValueAsString(exemplars);
+                .writeValueAsString(leitors);
         FileOutputStream out = new FileOutputStream(NOMEARQUIVO);
         out.write(json.getBytes());
         out.close();
     }
 
     @Override
-    public List<Exemplar> getAll() throws Exception {
+    public List<Leitor> getAll() throws Exception {
         try {
             FileInputStream in = new FileInputStream(NOMEARQUIVO);
             String json = new String(in.readAllBytes());
-            List<Exemplar> exemplars = getOjectmapper().readValue(json,
-                    new TypeReference<List<Exemplar>>() {});
-            return exemplars;
+            List<Leitor> leitors = getOjectmapper().readValue(json,
+                    new TypeReference<List<Leitor>>() {});
+            return leitors;
         }catch (FileNotFoundException f){
             return new ArrayList<>();
         }

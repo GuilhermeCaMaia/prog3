@@ -1,5 +1,7 @@
 package br.edu.femass.model;
 
+import java.util.Objects;
+
 public class Autor {
     private String nome;
     private String sobrenome;
@@ -29,5 +31,19 @@ public class Autor {
     //Faz o formato da lista
     public String toString(){
         return this.nome + " " + this.sobrenome;
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Autor autor = (Autor) o;
+        return nome.equals(autor.nome) && sobrenome.equals(autor.sobrenome);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nome, sobrenome);
     }
 }

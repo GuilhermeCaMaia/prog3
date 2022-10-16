@@ -1,0 +1,19 @@
+[ {
+  "proximoNumero" : 2,
+  "nome" : "Guilherme Maia",
+  "endereco" : "Vila Nova",
+  "telefone" : "997524385",
+  "prazoMaximoDevolucao" : 15,
+  "aluno" : null,
+  "professor" : null,
+  "codigo" : 1
+}, {
+  "proximoNumero" : 2,
+  "nome" : "Lucas Barbosa",
+  "endereco" : "Bocaina",
+  "telefone" : "27794487",
+  "prazoMaximoDevolucao" : 15,
+  "aluno" : null,
+  "professor" : null,
+  "codigo" : 1
+} ]

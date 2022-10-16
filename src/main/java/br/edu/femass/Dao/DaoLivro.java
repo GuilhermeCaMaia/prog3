@@ -31,24 +31,21 @@ public class DaoLivro extends Persistencia<Livro> implements Dao<Livro>{
             String json = new String(in.readAllBytes());
             List<Livro> livros = getOjectmapper().readValue(json,
                     new TypeReference<List<Livro>>() {});
-            Livro.atualizarProximoNumero(livros);
             return livros;
         }catch (FileNotFoundException f){
             return new ArrayList<>();
         }
     }
-//    public List<Livro> getLivros(Autor autor) throws Exception{
-//        List<Livro> livros = getLivros();
-//        List<Livro> livros1autor = new ArrayList<>();
-//
-//        for (Livro livro: livros){
-//            if(livro.getAutor().equals(autor)){
-//                livros1autor.add(livro);
-//            }
-//        }
-//
-//        return livros1autor;
-//    }
-//
-//    private List<Livro> getLivros() {}
+    public List<Livro> getAll(Autor autor) throws Exception{
+        List<Livro> livros = getAll();
+        List<Livro> livrosFiltrados = new ArrayList<>();
+
+        for (Livro livro: livros){
+            if(livro.getAutor().equals(autor)){
+                livrosFiltrados.add(livro);
+            }
+        }
+
+        return livrosFiltrados;
+    }
 }
