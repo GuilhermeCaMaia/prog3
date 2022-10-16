@@ -79,4 +79,8 @@ public class Leitor {
     public void setPrazoMaximoDevolucao(int prazoMaximoDevolucao) {
         this.prazoMaximoDevolucao = prazoMaximoDevolucao;
     }
+
+    public String toString(){
+        return this.getNome();
+    }
 }

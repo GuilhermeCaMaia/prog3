@@ -9,6 +9,7 @@ public class GuiMenu {
     private JButton BtnCadastrarAutor;
     private JButton BtnCadastrarLeitor;
     private JLabel JLMenu;
+    private JButton bntCadastrarExemplar;
 
     public GuiMenu() {
         BtnCadastrarAutor.addActionListener(new ActionListener() {
@@ -23,6 +24,13 @@ public class GuiMenu {
             public void actionPerformed(ActionEvent e) {
                 GuiCadastro guiCadastro = new GuiCadastro();
                 guiCadastro.abrirTela();
+            }
+        });
+        bntCadastrarExemplar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                GuiExemplar guiExemplar = new GuiExemplar();
+                guiExemplar.abrirTela();
             }
         });
     }

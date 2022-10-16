@@ -41,7 +41,12 @@ public class GuiCadastrarLeitorProfessor {
         listProfessor.addListSelectionListener(new ListSelectionListener() {
             @Override
             public void valueChanged(ListSelectionEvent e) {
-
+                Professor professor = (Professor) listProfessor.getSelectedValue();
+                if(professor==null) return;
+                textNome.setText(professor.getNome());
+                textEndereco.setText(professor.getEndereco());
+                textTelefone.setText(professor.getTelefone());
+                textDisciplina.setText(professor.getDisciplina());
             }
         });
     }
@@ -56,7 +61,7 @@ public class GuiCadastrarLeitorProfessor {
         JFrame frame = new JFrame();
         GuiCadastrarLeitorProfessor guiCadastrarLeitorProfessor =
                 new GuiCadastrarLeitorProfessor();
-        preencherListaProfessor();
+        guiCadastrarLeitorProfessor.preencherListaProfessor();
         JDialog jFrame = new JDialog(new Frame(), true);
         jFrame.setContentPane(guiCadastrarLeitorProfessor.JPanelCadastroLeitorProfessor);
         jFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

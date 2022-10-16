@@ -18,4 +18,14 @@
   "professor" : null,
   "matricula" : "2001230025",
   "codigo" : 1
+}, {
+  "proximoNumero" : 2,
+  "nome" : "",
+  "endereco" : "",
+  "telefone" : "",
+  "prazoMaximoDevolucao" : 15,
+  "aluno" : null,
+  "professor" : null,
+  "matricula" : "",
+  "codigo" : 1
 } ]
