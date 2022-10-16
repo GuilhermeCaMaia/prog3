@@ -16,4 +16,13 @@
   "aluno" : null,
   "professor" : null,
   "codigo" : 1
+}, {
+  "proximoNumero" : 2,
+  "nome" : "Alan Galante",
+  "endereco" : "Macae",
+  "telefone" : "164654646574",
+  "prazoMaximoDevolucao" : 15,
+  "aluno" : null,
+  "professor" : null,
+  "codigo" : 1
 } ]

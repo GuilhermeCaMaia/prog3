@@ -1,14 +1,13 @@
 package br.edu.femass.Gui;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class GuiMenu {
     private JPanel JPanelMenu;
     private JButton BtnCadastrarAutor;
-    private JButton BtnAlugarLivro;
+    private JButton BtnCadastrarLeitor;
     private JLabel JLMenu;
 
     public GuiMenu() {
@@ -19,7 +18,7 @@ public class GuiMenu {
                 guiAutor.abrirTela();
             }
         });
-        BtnAlugarLivro.addActionListener(new ActionListener() {
+        BtnCadastrarLeitor.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 GuiCadastro guiCadastro = new GuiCadastro();
@@ -32,7 +31,7 @@ public class GuiMenu {
         GuiMenu guiMenu = new GuiMenu();
         frame.setContentPane(guiMenu.JPanelMenu);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setTitle("Menu");
+        frame.setTitle("Menu Bibliotecaria");
         frame.pack();
         frame.setVisible(true);
     }

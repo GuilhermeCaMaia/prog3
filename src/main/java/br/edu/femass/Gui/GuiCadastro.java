@@ -21,7 +21,9 @@ public class GuiCadastro {
         cadastrarProfessorButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                GuiCadastrarLeitorProfessor guiCadastrarLeitorProfessor =
+                        new GuiCadastrarLeitorProfessor();
+                guiCadastrarLeitorProfessor.abrirTela();
             }
         });
     }
