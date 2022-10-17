@@ -45,14 +45,6 @@ public class Livro {
         Livro livro = (Livro) o;
         return codigo.equals(livro.codigo) && titulo.equals(livro.titulo) && autor.equals(livro.autor);
     }
-    //
-//    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (o == null || getClass() != o.getClass()) return false;
-//        Livro livro = (Livro) o;
-//        return Objects.equals(codigo, livro.codigo) && Objects.equals(titulo, livro.titulo) && Objects.equals(proximoNumero, livro.proximoNumero) && Objects.equals(autor, livro.autor);
-//    }
 
     @Override
     public int hashCode() {

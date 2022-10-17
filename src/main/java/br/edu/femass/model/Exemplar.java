@@ -9,12 +9,16 @@ public class Exemplar {
     private Long codigo;
     private Long proximoNumero = 1l;
     private LocalDate dataAquisicao;
+    private Livro livro;
 
+    public Exemplar(){
 
-    public Exemplar() throws Exception {
+    }
+    public Exemplar(Livro livro ) throws Exception {
         proximoCodigo();
         proximoNumero ++;
         this.dataAquisicao = LocalDate.now();
+        this.livro = livro;
     }
 
     public Long getCodigo() {
@@ -37,7 +41,7 @@ public class Exemplar {
         this.dataAquisicao = LocalDate.now();
     }
 
-    public void proximoCodigo() throws Exception {
+    public void proximoCodigo() throws Exception { // trocar variavel de todos os proximoCodigo
         Long maior = 0L;
 
         List<Livro> livros = new DaoLivro().getAll();
@@ -47,5 +51,17 @@ public class Exemplar {
                 setCodigo(maior + 1);
             }
         }
+    }
+
+    public Livro getLivro() {
+        return livro;
+    }
+
+    public void setLivro(Livro livro) {
+        this.livro = livro;
+    }
+
+    public String toString(){
+        return getLivro().getAutor().getNome() +" "+ getLivro().getTitulo();
     }
 }

@@ -1,0 +1,31 @@
+[ {
+  "dataEmprestimo" : [ 2022, 10, 16 ],
+  "dataPrevistaDevolicao" : [ 2022, 10, 31 ],
+  "dataDevolucao" : null,
+  "livro" : null,
+  "leitor" : null
+}, {
+  "dataEmprestimo" : [ 2022, 10, 16 ],
+  "dataPrevistaDevolicao" : [ 2022, 10, 31 ],
+  "dataDevolucao" : null,
+  "livro" : null,
+  "leitor" : null
+}, {
+  "dataEmprestimo" : [ 2022, 10, 16 ],
+  "dataPrevistaDevolicao" : [ 2022, 10, 31 ],
+  "dataDevolucao" : null,
+  "livro" : null,
+  "leitor" : null
+}, {
+  "dataEmprestimo" : [ 2022, 10, 16 ],
+  "dataPrevistaDevolicao" : [ 2022, 10, 31 ],
+  "dataDevolucao" : null,
+  "livro" : null,
+  "leitor" : null
+}, {
+  "dataEmprestimo" : null,
+  "dataPrevistaDevolicao" : null,
+  "dataDevolucao" : null,
+  "livro" : null,
+  "leitor" : null
+} ]

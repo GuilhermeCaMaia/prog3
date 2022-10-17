@@ -27,8 +27,8 @@ public class GuiExemplar {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    Exemplar exemplar = new Exemplar();
-                    exemplar = new Exemplar();
+                    Exemplar exemplar = new Exemplar((Livro) listLivros.getSelectedValue());
+                    exemplar = new Exemplar((Livro) listLivros.getSelectedValue());
                     new DaoExemplar().save(exemplar);// adicionar os nomes dos livros tbm
                     preencherListaExemplar();
                 } catch (Exception ex) {

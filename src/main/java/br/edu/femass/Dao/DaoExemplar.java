@@ -1,6 +1,7 @@
 package br.edu.femass.Dao;
 
 import br.edu.femass.model.Exemplar;
+import br.edu.femass.model.Livro;
 import com.fasterxml.jackson.core.type.TypeReference;
 
 import java.io.FileInputStream;
@@ -34,5 +35,16 @@ public class DaoExemplar extends Persistencia<Exemplar> implements Dao<Exemplar>
         }catch (FileNotFoundException f){
             return new ArrayList<>();
         }
+    }
+    public List<Exemplar> getAll(Livro livro) throws Exception {
+        List<Exemplar> exemplars = getAll();
+        List<Exemplar> exemplarsNovo = getAll();
+
+        for(Exemplar exemplar: exemplars){
+            if(exemplar.getLivro().getAutor().equals(livro.getAutor())){
+                exemplarsNovo.add(exemplar);
+            }
+        }
+        return exemplarsNovo;
     }
 }

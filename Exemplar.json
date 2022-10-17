@@ -1,5 +1,57 @@
 [ {
   "codigo" : 5,
   "proximoNumero" : 2,
-  "dataAquisicao" : [ 2022, 10, 16 ]
+  "dataAquisicao" : [ 2022, 10, 16 ],
+  "livro" : {
+    "codigo" : 1,
+    "titulo" : "teste",
+    "proximoNumero" : 1,
+    "autor" : {
+      "nome" : "Guilherme",
+      "sobrenome" : "Maia",
+      "nacionalidade" : "Brasileiro"
+    }
+  }
+}, {
+  "codigo" : 5,
+  "proximoNumero" : 2,
+  "dataAquisicao" : [ 2022, 10, 16 ],
+  "livro" : {
+    "codigo" : 3,
+    "titulo" : "teste2",
+    "proximoNumero" : 1,
+    "autor" : {
+      "nome" : "Guilherme",
+      "sobrenome" : "Maia",
+      "nacionalidade" : "Brasileiro"
+    }
+  }
+}, {
+  "codigo" : 5,
+  "proximoNumero" : 2,
+  "dataAquisicao" : [ 2022, 10, 16 ],
+  "livro" : {
+    "codigo" : 4,
+    "titulo" : "teste3",
+    "proximoNumero" : 1,
+    "autor" : {
+      "nome" : "Guilherme",
+      "sobrenome" : "Maia",
+      "nacionalidade" : "Brasileiro"
+    }
+  }
+}, {
+  "codigo" : 5,
+  "proximoNumero" : 2,
+  "dataAquisicao" : [ 2022, 10, 16 ],
+  "livro" : {
+    "codigo" : 2,
+    "titulo" : "livro",
+    "proximoNumero" : 1,
+    "autor" : {
+      "nome" : "Gui",
+      "sobrenome" : "Maia",
+      "nacionalidade" : "Brasileiro"
+    }
+  }
 } ]

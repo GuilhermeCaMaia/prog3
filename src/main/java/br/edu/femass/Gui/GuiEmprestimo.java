@@ -39,13 +39,20 @@ public class GuiEmprestimo {
         listLeitor.addListSelectionListener(new ListSelectionListener() {
             @Override
             public void valueChanged(ListSelectionEvent e) {
-
+                //Emprestimo emprestimo = new Emprestimo();
             }
         });
         ButtonAlugar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                try {
+                    Emprestimo emprestimo = new Emprestimo((Livro) listLivros.getSelectedValue(),(Leitor) listLeitor.getSelectedValue());
+                    emprestimo = new Emprestimo((Livro) listLivros.getSelectedValue(),(Leitor) listLeitor.getSelectedValue());
+                    new DaoEmprestimo().save(emprestimo);
+                    JOptionPane.showMessageDialog(null, "Emprestimo Realizado!");
+                } catch (Exception ex) {
+                    JOptionPane.showMessageDialog(null, ex.getMessage());
+                }
             }
         });
     }
@@ -64,12 +71,13 @@ public class GuiEmprestimo {
     }
 
     private void preencherListaLivro(){
-        DaoLivro daoLivro = new DaoLivro();
+        //DaoLivro daoLivro = new DaoLivro();
+        DaoExemplar daoExemplar = new DaoExemplar();
         Autor autor = new Autor();
         if(cBoxAutor.equals(autor)){
             try {
                 listLivros.setListData(
-                        new DaoLivro().getAll().toArray());
+                        new DaoExemplar().getAll().toArray());
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(null,e.getMessage());
             }
@@ -87,7 +95,6 @@ public class GuiEmprestimo {
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null,e.getMessage());
         }
-
     }
 
     public void abrirTela(){

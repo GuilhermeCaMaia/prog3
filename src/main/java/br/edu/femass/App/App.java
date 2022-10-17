@@ -6,5 +6,6 @@ public class App {
     public static void main(String[] args) {
         new GuiMenu().abrirTelaI();
         //new GuiExemplar().abrirTela();
+        //new GuiEmprestimo().abrirTela();
     }
 }

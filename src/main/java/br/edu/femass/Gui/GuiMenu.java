@@ -6,31 +6,20 @@ import java.awt.event.ActionListener;
 
 public class GuiMenu {
     private JPanel JPanelMenu;
-    private JButton BtnCadastrarAutor;
-    private JButton BtnCadastrarLeitor;
-    private JLabel JLMenu;
-    private JButton bntCadastrarExemplar;
+    private JButton btnBibliotecaria;
+    private JButton btnAtendente;
 
     public GuiMenu() {
-        BtnCadastrarAutor.addActionListener(new ActionListener() {
+        btnBibliotecaria.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                GuiAutor guiAutor = new GuiAutor();
-                guiAutor.abrirTela();
+                new GuiBibliotecaria().abrirTelaB();
             }
         });
-        BtnCadastrarLeitor.addActionListener(new ActionListener() {
+        btnAtendente.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                GuiCadastro guiCadastro = new GuiCadastro();
-                guiCadastro.abrirTela();
-            }
-        });
-        bntCadastrarExemplar.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                GuiExemplar guiExemplar = new GuiExemplar();
-                guiExemplar.abrirTela();
+                new GuiAtendente().abrirTela();
             }
         });
     }
@@ -39,7 +28,7 @@ public class GuiMenu {
         GuiMenu guiMenu = new GuiMenu();
         frame.setContentPane(guiMenu.JPanelMenu);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setTitle("Menu Bibliotecaria");
+        frame.setTitle("Menu principal");
         frame.pack();
         frame.setVisible(true);
     }
