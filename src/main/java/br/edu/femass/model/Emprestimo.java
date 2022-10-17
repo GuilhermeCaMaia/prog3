@@ -9,15 +9,26 @@ public class Emprestimo {
     private LocalDate dataPrevistaDevolicao;
     private LocalDate dataDevolucao;
     private Livro livro;
-    private Leitor leitor;
+    private Leitor Aluno;
+    private Professor professor;
     public Emprestimo(){
 
     }
-    public Emprestimo( Livro livro, Leitor leitor) {
-        this.dataEmprestimo = dataEmprestimo;
-        this.dataPrevistaDevolicao = dataPrevistaDevolicao;
+    public Emprestimo( Livro livro, Aluno aluno ) {
+        this.dataEmprestimo = LocalDate.now();
+        this.dataPrevistaDevolicao = LocalDate.now().plusDays(aluno.getPrazoMaximoDevolucao());
         this.dataDevolucao = dataDevolucao;
+        this.livro = livro;
+        this.Aluno = aluno;
     }
+    public Emprestimo( Livro livro, Professor professor ) {
+        this.dataEmprestimo = LocalDate.now();
+        this.dataPrevistaDevolicao = LocalDate.now().plusDays(professor.getPrazoMaximoDevolucao());
+        this.dataDevolucao = dataDevolucao;
+        this.livro = livro;
+        this.professor = professor;
+    }
+
 
     public LocalDate getDataEmprestimo() {
         return dataEmprestimo;
@@ -36,27 +47,28 @@ public class Emprestimo {
     }
 
     public void setDataDevolucao(LocalDate dataDevolucao) {
-        this.dataDevolucao = dataDevolucao;
+        this.dataDevolucao = LocalDate.now();
     }
     public void setDataPrevistaDevolicao(LocalDate dataPrevistaDevolicao) {
-        this.dataPrevistaDevolicao = LocalDate.now().plusDays(15);
+        this.dataPrevistaDevolicao = dataPrevistaDevolicao;
     }
 
     public void setLivro(Livro livro) {
         this.livro = livro;
     }
 
-    public void setLeitor(Leitor leitor) {
-        this.leitor = leitor;
-    }
-
     public Livro getLivro() {
         return livro;
     }
 
-    public Leitor getLeitor() {
-        return leitor;
+    public Leitor getAluno() {
+        return Aluno;
+    }
+    public Professor getProfessor() {
+        return professor;
     }
 
-
+    public String toString(){
+        return this.livro.getTitulo()+" "+this.dataPrevistaDevolicao;
+    }
 }

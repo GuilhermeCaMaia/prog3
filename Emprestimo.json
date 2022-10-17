@@ -1,31 +1,101 @@
 [ {
-  "dataEmprestimo" : [ 2022, 10, 16 ],
-  "dataPrevistaDevolicao" : [ 2022, 10, 31 ],
+  "dataEmprestimo" : [ 2022, 10, 17 ],
+  "dataPrevistaDevolicao" : [ 2022, 11, 1 ],
   "dataDevolucao" : null,
-  "livro" : null,
-  "leitor" : null
+  "livro" : {
+    "codigo" : 1,
+    "titulo" : "A Guerra dos Tronos : As Crônicas de Gelo e Fogo",
+    "proximoNumero" : 1,
+    "autor" : {
+      "nome" : "George",
+      "sobrenome" : "R. R. Martin",
+      "nacionalidade" : "EUA"
+    }
+  },
+  "professor" : null,
+  "aluno" : null
 }, {
-  "dataEmprestimo" : [ 2022, 10, 16 ],
-  "dataPrevistaDevolicao" : [ 2022, 10, 31 ],
+  "dataEmprestimo" : [ 2022, 10, 17 ],
+  "dataPrevistaDevolicao" : [ 2022, 11, 1 ],
   "dataDevolucao" : null,
-  "livro" : null,
-  "leitor" : null
+  "livro" : {
+    "codigo" : 2,
+    "titulo" : "Harry Potter e a Pedra Filosofal",
+    "proximoNumero" : 1,
+    "autor" : {
+      "nome" : "J. K.",
+      "sobrenome" : "Rowling",
+      "nacionalidade" : "Reino Unido"
+    }
+  },
+  "professor" : null,
+  "aluno" : null
 }, {
-  "dataEmprestimo" : [ 2022, 10, 16 ],
-  "dataPrevistaDevolicao" : [ 2022, 10, 31 ],
+  "dataEmprestimo" : [ 2022, 10, 17 ],
+  "dataPrevistaDevolicao" : [ 2022, 11, 1 ],
   "dataDevolucao" : null,
-  "livro" : null,
-  "leitor" : null
+  "livro" : {
+    "codigo" : 10,
+    "titulo" : "harry potter e a ordem da fênix",
+    "proximoNumero" : 1,
+    "autor" : {
+      "nome" : "J. K.",
+      "sobrenome" : "Rowling",
+      "nacionalidade" : "Reino Unido"
+    }
+  },
+  "professor" : null,
+  "aluno" : null
 }, {
-  "dataEmprestimo" : [ 2022, 10, 16 ],
-  "dataPrevistaDevolicao" : [ 2022, 10, 31 ],
+  "dataEmprestimo" : [ 2022, 10, 17 ],
+  "dataPrevistaDevolicao" : [ 2022, 11, 16 ],
   "dataDevolucao" : null,
-  "livro" : null,
-  "leitor" : null
+  "livro" : {
+    "codigo" : 12,
+    "titulo" : "harry potter e as relíquias da morte",
+    "proximoNumero" : 1,
+    "autor" : {
+      "nome" : "J. K.",
+      "sobrenome" : "Rowling",
+      "nacionalidade" : "Reino Unido"
+    }
+  },
+  "professor" : {
+    "proximoNumero" : 2,
+    "nome" : "Alan Galante",
+    "endereco" : "Macaé",
+    "telefone" : "995215313",
+    "prazoMaximoDevolucao" : 30,
+    "aluno" : null,
+    "professor" : null,
+    "disciplina" : "Prog 3",
+    "codigo" : 1
+  },
+  "aluno" : null
 }, {
-  "dataEmprestimo" : null,
-  "dataPrevistaDevolicao" : null,
+  "dataEmprestimo" : [ 2022, 10, 17 ],
+  "dataPrevistaDevolicao" : [ 2022, 11, 1 ],
   "dataDevolucao" : null,
-  "livro" : null,
-  "leitor" : null
+  "livro" : {
+    "codigo" : 2,
+    "titulo" : "Harry Potter e a Pedra Filosofal",
+    "proximoNumero" : 1,
+    "autor" : {
+      "nome" : "J. K.",
+      "sobrenome" : "Rowling",
+      "nacionalidade" : "Reino Unido"
+    }
+  },
+  "professor" : null,
+  "aluno" : {
+    "proximoNumero" : 2,
+    "nome" : "Lucas Barbosa",
+    "endereco" : "Conceição de Macabu",
+    "telefone" : "997521234",
+    "prazoMaximoDevolucao" : 15,
+    "aluno" : null,
+    "professor" : null,
+    "matricula" : "2001230025",
+    "codigo" : 1
+  }
 } ]

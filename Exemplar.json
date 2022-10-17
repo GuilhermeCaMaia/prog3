@@ -1,57 +1,169 @@
 [ {
-  "codigo" : 5,
+  "codigo" : 13,
   "proximoNumero" : 2,
-  "dataAquisicao" : [ 2022, 10, 16 ],
+  "dataAquisicao" : [ 2022, 10, 17 ],
   "livro" : {
     "codigo" : 1,
-    "titulo" : "teste",
+    "titulo" : "A Guerra dos Tronos : As Crônicas de Gelo e Fogo",
     "proximoNumero" : 1,
     "autor" : {
-      "nome" : "Guilherme",
-      "sobrenome" : "Maia",
-      "nacionalidade" : "Brasileiro"
+      "nome" : "George",
+      "sobrenome" : "R. R. Martin",
+      "nacionalidade" : "EUA"
     }
   }
 }, {
-  "codigo" : 5,
+  "codigo" : 13,
   "proximoNumero" : 2,
-  "dataAquisicao" : [ 2022, 10, 16 ],
+  "dataAquisicao" : [ 2022, 10, 17 ],
   "livro" : {
     "codigo" : 3,
-    "titulo" : "teste2",
+    "titulo" : "A Fúria dos Reis: As Crônicas de Gelo e Fogo",
     "proximoNumero" : 1,
     "autor" : {
-      "nome" : "Guilherme",
-      "sobrenome" : "Maia",
-      "nacionalidade" : "Brasileiro"
+      "nome" : "George",
+      "sobrenome" : "R. R. Martin",
+      "nacionalidade" : "EUA"
     }
   }
 }, {
-  "codigo" : 5,
+  "codigo" : 13,
   "proximoNumero" : 2,
-  "dataAquisicao" : [ 2022, 10, 16 ],
+  "dataAquisicao" : [ 2022, 10, 17 ],
   "livro" : {
     "codigo" : 4,
-    "titulo" : "teste3",
+    "titulo" : "A Tormenta de Espadas: As Crônicas de Gelo e Fogo",
     "proximoNumero" : 1,
     "autor" : {
-      "nome" : "Guilherme",
-      "sobrenome" : "Maia",
-      "nacionalidade" : "Brasileiro"
+      "nome" : "George",
+      "sobrenome" : "R. R. Martin",
+      "nacionalidade" : "EUA"
     }
   }
 }, {
-  "codigo" : 5,
+  "codigo" : 13,
   "proximoNumero" : 2,
-  "dataAquisicao" : [ 2022, 10, 16 ],
+  "dataAquisicao" : [ 2022, 10, 17 ],
   "livro" : {
-    "codigo" : 2,
-    "titulo" : "livro",
+    "codigo" : 5,
+    "titulo" : "O Festim dos Corvos: As Crônicas de Gelo e Fogo",
     "proximoNumero" : 1,
     "autor" : {
-      "nome" : "Gui",
-      "sobrenome" : "Maia",
-      "nacionalidade" : "Brasileiro"
+      "nome" : "George",
+      "sobrenome" : "R. R. Martin",
+      "nacionalidade" : "EUA"
+    }
+  }
+}, {
+  "codigo" : 13,
+  "proximoNumero" : 2,
+  "dataAquisicao" : [ 2022, 10, 17 ],
+  "livro" : {
+    "codigo" : 6,
+    "titulo" : "A Dança dos Dragões: As Crônicas de Gelo e Fogo",
+    "proximoNumero" : 1,
+    "autor" : {
+      "nome" : "George",
+      "sobrenome" : "R. R. Martin",
+      "nacionalidade" : "EUA"
+    }
+  }
+}, {
+  "codigo" : 13,
+  "proximoNumero" : 2,
+  "dataAquisicao" : [ 2022, 10, 17 ],
+  "livro" : {
+    "codigo" : 2,
+    "titulo" : "Harry Potter e a Pedra Filosofal",
+    "proximoNumero" : 1,
+    "autor" : {
+      "nome" : "J. K.",
+      "sobrenome" : "Rowling",
+      "nacionalidade" : "Reino Unido"
+    }
+  }
+}, {
+  "codigo" : 13,
+  "proximoNumero" : 2,
+  "dataAquisicao" : [ 2022, 10, 17 ],
+  "livro" : {
+    "codigo" : 7,
+    "titulo" : "harry potter e a câmara secreta",
+    "proximoNumero" : 1,
+    "autor" : {
+      "nome" : "J. K.",
+      "sobrenome" : "Rowling",
+      "nacionalidade" : "Reino Unido"
+    }
+  }
+}, {
+  "codigo" : 13,
+  "proximoNumero" : 2,
+  "dataAquisicao" : [ 2022, 10, 17 ],
+  "livro" : {
+    "codigo" : 8,
+    "titulo" : "harry potter e o prisioneiro de azkaban",
+    "proximoNumero" : 1,
+    "autor" : {
+      "nome" : "J. K.",
+      "sobrenome" : "Rowling",
+      "nacionalidade" : "Reino Unido"
+    }
+  }
+}, {
+  "codigo" : 13,
+  "proximoNumero" : 2,
+  "dataAquisicao" : [ 2022, 10, 17 ],
+  "livro" : {
+    "codigo" : 9,
+    "titulo" : "harry potter e o cálice de fogo",
+    "proximoNumero" : 1,
+    "autor" : {
+      "nome" : "J. K.",
+      "sobrenome" : "Rowling",
+      "nacionalidade" : "Reino Unido"
+    }
+  }
+}, {
+  "codigo" : 13,
+  "proximoNumero" : 2,
+  "dataAquisicao" : [ 2022, 10, 17 ],
+  "livro" : {
+    "codigo" : 10,
+    "titulo" : "harry potter e a ordem da fênix",
+    "proximoNumero" : 1,
+    "autor" : {
+      "nome" : "J. K.",
+      "sobrenome" : "Rowling",
+      "nacionalidade" : "Reino Unido"
+    }
+  }
+}, {
+  "codigo" : 13,
+  "proximoNumero" : 2,
+  "dataAquisicao" : [ 2022, 10, 17 ],
+  "livro" : {
+    "codigo" : 11,
+    "titulo" : "harry potter e o enigma do príncipe",
+    "proximoNumero" : 1,
+    "autor" : {
+      "nome" : "J. K.",
+      "sobrenome" : "Rowling",
+      "nacionalidade" : "Reino Unido"
+    }
+  }
+}, {
+  "codigo" : 13,
+  "proximoNumero" : 2,
+  "dataAquisicao" : [ 2022, 10, 17 ],
+  "livro" : {
+    "codigo" : 12,
+    "titulo" : "harry potter e as relíquias da morte",
+    "proximoNumero" : 1,
+    "autor" : {
+      "nome" : "J. K.",
+      "sobrenome" : "Rowling",
+      "nacionalidade" : "Reino Unido"
     }
   }
 } ]

@@ -7,13 +7,19 @@ import java.awt.event.ActionListener;
 public class GuiAtendente {
     private JPanel JPanelAtendente;
     private JButton btnAlugarLivro;
-    private JButton button2;
+    private JButton devolverLivroButton;
 
     public GuiAtendente() {
         btnAlugarLivro.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new GuiEmprestimo().abrirTela();
+            }
+        });
+        devolverLivroButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new GuiDevolucao().abrirTela();
             }
         });
     }
