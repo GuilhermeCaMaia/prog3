@@ -79,6 +79,7 @@ public class GuiExemplar {
         guiExemplar.preencherListaAutro();
         guiExemplar.preencherListaExemplar();
         guiExemplar.preencherListaLivro();
+        jFrame.setTitle("Cadastrar exemplar");
         jFrame.setContentPane(guiExemplar.JPanelExemplar);
         jFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         jFrame.pack();

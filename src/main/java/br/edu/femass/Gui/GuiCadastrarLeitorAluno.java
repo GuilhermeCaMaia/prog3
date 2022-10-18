@@ -64,6 +64,7 @@ public class GuiCadastrarLeitorAluno {
                 new GuiCadastrarLeitorAluno();
         guiCadastrarLeitorAluno.preencherListaAluno();
         JDialog jFrame = new JDialog(new Frame(), true);
+        jFrame.setTitle("Cadastrar Aluno");
         jFrame.setContentPane(guiCadastrarLeitorAluno.JPanelCadastroLeitorAluno);
         jFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         jFrame.pack();

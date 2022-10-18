@@ -69,11 +69,9 @@ public class GuiAutor {
         GuiAutor guiAutor = new GuiAutor();
         guiAutor.preencherLista();
         JDialog jFrame = new JDialog(new Frame(),true);
+        jFrame.setTitle("Cadastar Autor");
         jFrame.setContentPane(guiAutor.JPanelCadastrarAutor);
-
-        //frame.setContentPane(guiAutor.JPanelCadastrarAutor);
         jFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        //frame.setTitle("Cadastrar autor");
         jFrame.pack();
         jFrame.setVisible(true);
     }

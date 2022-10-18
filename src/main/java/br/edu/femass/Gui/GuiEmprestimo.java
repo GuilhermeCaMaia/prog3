@@ -121,6 +121,7 @@ public class GuiEmprestimo {
         guiEmprestimo.preencherListaAluno();
         guiEmprestimo.preencherListaProfessor();
         JDialog jFrame = new JDialog(new Frame(), true);
+        jFrame.setTitle("Emprestimo de livro");
         jFrame.setContentPane(guiEmprestimo.getJPanelEmprestimo());
         jFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         jFrame.pack();

@@ -22,7 +22,7 @@ public class GuiDevolucao {
         devolverButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                JOptionPane.showMessageDialog(null,"Clicou no botão,\nContinua na n2!");
             }
         });
     }
@@ -40,6 +40,7 @@ public class GuiDevolucao {
         GuiDevolucao guiDevolucao = new GuiDevolucao();
         guiDevolucao.preencherListaEmprestimo();
         JDialog jFrame = new JDialog(new Frame(), true);
+        jFrame.setTitle("Devolução");
         jFrame.setContentPane(guiDevolucao.getJPanelDevolucao());
         jFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         jFrame.pack();

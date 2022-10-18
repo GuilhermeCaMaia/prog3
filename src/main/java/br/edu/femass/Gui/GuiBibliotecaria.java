@@ -10,6 +10,7 @@ public class GuiBibliotecaria {
     private JButton BtnCadastrarLeitor;
     private JLabel JLMenu;
     private JButton bntCadastrarExemplar;
+    private JButton bntListaDeLeitoresAtraso;
 
     public GuiBibliotecaria() {
         BtnCadastrarAutor.addActionListener(new ActionListener() {
@@ -31,6 +32,13 @@ public class GuiBibliotecaria {
             public void actionPerformed(ActionEvent e) {
                 GuiExemplar guiExemplar = new GuiExemplar();
                 guiExemplar.abrirTela();
+            }
+        });
+        bntListaDeLeitoresAtraso.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                GuiLeitorAtraso guiLeitorAtraso = new GuiLeitorAtraso();
+                guiLeitorAtraso.abrirTela();
             }
         });
     }

@@ -92,6 +92,7 @@ public class GuiLivro {
         guiLivro.preencherListaAutro();
         guiLivro.preencherLista();
         JDialog jFrame = new JDialog(new Frame(), true);
+        jFrame.setTitle("Cadastrar livros");
         jFrame.setContentPane(guiLivro.getJPanelLivro());
         jFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         jFrame.pack();
